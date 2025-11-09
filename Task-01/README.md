@@ -22,6 +22,6 @@
 
 ## Completion Screenshots
 
-- ![screenshot](congragulatory-completion-screenshot.png)
+![screenshot](congragulatory-completion-screenshot.png)
 
 ---
