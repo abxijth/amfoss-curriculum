@@ -5,6 +5,6 @@
 
 - I learned not just the commands, but also how to think in Git — how history works, how to clean it up, and how to recover from mistakes
 
-- This repository contains screenshots of completed **[Git Exercises](https://gitexercises.fracz.com/)**
+- This repository contains [screenshots](task-specific-screenshots/) of completed **[Git Exercises](https://gitexercises.fracz.com/)**
 
 - Detailed explanations of how each task was solved and what was learned are available on my **[blog](https://abxijth.github.io/amfoss/posts/task-01/)**
