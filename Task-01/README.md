@@ -20,7 +20,7 @@
 
 ---
 
-## Completion Screenshots
+## Completion Screenshot
 
 ![screenshot](task-completion-screenshot.png)
 
