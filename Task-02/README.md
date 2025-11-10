@@ -1,12 +1,17 @@
 # Task 02: SRS
 
+
+> **Software Requirements Specification**
+
+- The development process for MeloFi began with the creation of a comprehensive Software Requirements Specification (SRS) document. 
+- This foundational document details the system's intended purpose, features, and overall requirements. 
+- It serves as a guide for the project, ensuring that all stakeholders, including developers and designers, have a clear and shared understanding of the goals and scope.
+
 ---
 
-### The development process for MeloFi began with the creation of a comprehensive Software Requirements Specification (SRS) document. This foundational document details the system's intended purpose, features, and overall requirements. It serves as a guide for the project, ensuring that all stakeholders, including developers and designers, have a clear and shared understanding of the goals and scope.
+> **Overview**
 
----
-
-### The SRS for MeloFi provides a detailed look at the project's vision and is available in the accompanying PDF document. The key sections covered in the SRS are:
+- The SRS for MeloFi provides a detailed look at the project's vision and is available in the accompanying PDF document. The key sections covered in the SRS are:
 
 *   **Project Overview:** A high-level introduction to MeloFi.
 *   **Goals:** The primary objectives the project aims to achieve.
