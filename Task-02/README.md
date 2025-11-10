@@ -11,7 +11,7 @@
 
 > ## Overview
 
-- The SRS for MeloFi provides a detailed look at the project's vision and is available in the accompanying PDF document. The key sections covered in the SRS are:
+**The SRS for MeloFi provides a detailed look at the project's vision and is available in the accompanying PDF document. The key sections covered in the SRS are:**
 
 *   **Project Overview:** A high-level introduction to MeloFi.
 *   **Goals:** The primary objectives the project aims to achieve.
