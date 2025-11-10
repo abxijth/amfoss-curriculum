@@ -10,5 +10,5 @@
 *   **Core Features:** A list of the essential functionalities to be included.
 *   **Basic Tech Stack:** An outline of the proposed technologies for development.
 
-## You can find the complete document here: [MeloFi_SRS.pdf]("SRS (MeloFi).pdf")
+## You can find the complete document here: [SRS-MeloFi](SRS.pdf)
 
