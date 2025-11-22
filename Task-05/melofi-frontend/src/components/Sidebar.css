@@ -1,0 +1,49 @@
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background: rgba(164, 172, 200, 0.08);
+  padding: 10px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+  
+}
+
+
+.menu {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 20px;
+	margin-top: 0px;
+
+}
+
+.menu-links {
+	text-decoration: none;
+	color: white;
+	border: solid 2px;
+	border-color: white;
+	padding: 15px;
+	width: 160px;
+	text-align: center;
+	background: #484D5D;
+	border: none;
+	border-radius: 10px;
+	font-weight: bold;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+
+.sidebar-logo{
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	text-shadow: 0 4px 20px rgba(0,0,0,0.30);
+
+
+
+
+}

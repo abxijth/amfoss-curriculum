@@ -1,0 +1,60 @@
+/* 
+playlist-card-dashboard
+playlist-details
+*/
+
+
+.playlist-card-dashboard {
+	display: inline-flex;
+  	flex-direction: column;
+  	margin: 10px;
+  	border-radius: 10px;
+  	justify-content: center;
+  	align-items: center;
+ 	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+ 	background: #222831;
+
+}
+
+.playlist-details{
+	display: inline-flex;
+	justify-content: center;
+  	align-items: center;
+  	flex-flow: column;
+  	position: relative;
+  	top: 10px;
+
+}
+
+
+.playlist-name{
+	position: relative;
+	top: 6px;
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-shadow: 0 4px 20px rgba(0,0,0,0.30);
+}
+
+.playlist-creator{
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	margin-top: 10px;
+	font-size: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	text-shadow: 0 4px 20px rgba(0,0,0,0.30);
+}
+
+.playlist-card-dashboard img{
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative;
+  top: 6px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}

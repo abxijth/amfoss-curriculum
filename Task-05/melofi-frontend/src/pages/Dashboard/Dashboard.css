@@ -1,0 +1,74 @@
+.music-cards-div {
+	display: flex;
+	padding: 30px;
+  	display: flex;
+  	flex-flow: row wrap;  	
+  	align-items: center;
+  	justify-content: center;
+  	position: relative;
+  	top: -28px;
+
+}
+
+.songs-title-btn-div {
+	display: flex;
+	padding: 30px;
+  	display: flex;
+  	flex-flow: row wrap;  	
+  	align-items: center;
+  	justify-content: center;
+}
+
+.songs-title-btn {
+	color: white;
+	font-weight: bold;
+	padding: 15px;
+	width: 120px;
+	text-align: center;
+	background: #484D5D;
+	border: none;
+	border-radius: 50px;
+	font-size: 18px;
+	font-weight: bold;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.playlists-title-btn-div {
+	display: flex;
+	padding: 30px;
+  	display: flex;
+  	flex-flow: row wrap;  	
+  	align-items: center;
+  	justify-content: center;
+}
+
+.playlists-title-btn {
+	color: white;
+	font-weight: bold;
+	padding: 15px;
+	width: 120px;
+	text-align: center;
+	background: #484D5D;
+	border: none;
+	border-radius: 50px;
+	font-size: 18px;
+	font-weight: bold;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+.playlists-section {
+	margin-top: -55px;
+}
+
+
+.wrapper-dashboard {
+	margin-left: 220px;
+	
+}
+
+
+
+
+
+
