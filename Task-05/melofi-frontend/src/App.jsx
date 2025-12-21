@@ -1,25 +1,30 @@
-import {Login} from './pages/Login/Login.jsx'
-import {SignUp} from './pages/SignUp/SignUp.jsx'
-import {Dashboard} from './pages/Dashboard/Dashboard.jsx'
-import {HashRouter, Routes, Route} from 'react-router-dom'
+import Login from './pages/Login/Login.jsx';
+import SignUp from './pages/SignUp/SignUp.jsx';
+import Dashboard from './pages/Dashboard/Dashboard.jsx';
+import Library from './pages/Library/Library.jsx';
+import Search from './pages/Search/Search.jsx';
+
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 
 function App() {
 
+
 	return(
-		<>
-			<HashRouter>
-				<Routes>
-					<Route path="/" element={<Login/>}/>
-					<Route path="/home" element={<Dashboard/>}/>
-					<Route path="/signup" element={<SignUp/>}/>
 
-				</Routes>
+		<BrowserRouter>
+		<Routes>
+			<Route path="/" element = {<Login/>}/>
+			<Route path="/login" element = {<Login/>}/>
+			<Route path="/signup" element = {<SignUp/>}/>
+			<Route path="/dashboard" element = {<Dashboard/>}/>
+			<Route path="/library" element = {<Library/>}/>
+			<Route path="/search" element = {<Search/>}/>
 
+			
 
-			</HashRouter>
-
-		</>
+		</Routes>
+		</BrowserRouter>
 
 
 
@@ -31,4 +36,3 @@ function App() {
 }
 
 export default App
-

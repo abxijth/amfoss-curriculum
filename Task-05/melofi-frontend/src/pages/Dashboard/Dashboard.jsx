@@ -17,15 +17,15 @@ const Dashboard = () => {
 					</div>
 					<div className="music-cards-div">
 						<MusicCard songBanner = "https://picsum.photos/200"  songName = "Song Name"  albumName = "Album Name" singer = "Singer" />
-		        		<MusicCard songBanner = "https://picsum.photos/200"  songName = "Hello"  albumName = "albumname" singer = "singer" />
-		        		<MusicCard songBanner = "https://picsum.photos/200"  songName = "Hello"  albumName = "albumname" singer = "singer" />
-		        		<MusicCard songBanner = "https://picsum.photos/200"  songName = "Hello"  albumName = "albumname" singer = "singer" />
-		        		<MusicCard songBanner = "https://picsum.photos/200"  songName = "Hello"  albumName = "albumname" singer = "singer" />
-		        		<MusicCard songBanner = "https://picsum.photos/200"  songName = "Hello"  albumName = "albumname" singer = "singer" />
-		        		<MusicCard songBanner = "https://picsum.photos/200"  songName = "Hello"  albumName = "albumname" singer = "singer" />
-						<MusicCard songBanner = "https://picsum.photos/200"  songName = "Hello"  albumName = "albumname" singer = "singer" />
-						<MusicCard songBanner = "https://picsum.photos/200"  songName = "Hello"  albumName = "albumname" singer = "singer" />
-						<MusicCard songBanner = "https://picsum.photos/200"  songName = "Hello"  albumName = "albumname" singer = "singer" />        		
+						<MusicCard songBanner = "https://picsum.photos/200"  songName = "Song Name"  albumName = "Album Name" singer = "Singer" />
+						<MusicCard songBanner = "https://picsum.photos/200"  songName = "Song Name"  albumName = "Album Name" singer = "Singer" />
+						<MusicCard songBanner = "https://picsum.photos/200"  songName = "Song Name"  albumName = "Album Name" singer = "Singer" />
+						<MusicCard songBanner = "https://picsum.photos/200"  songName = "Song Name"  albumName = "Album Name" singer = "Singer" />
+						<MusicCard songBanner = "https://picsum.photos/200"  songName = "Song Name"  albumName = "Album Name" singer = "Singer" />
+						<MusicCard songBanner = "https://picsum.photos/200"  songName = "Song Name"  albumName = "Album Name" singer = "Singer" />
+						<MusicCard songBanner = "https://picsum.photos/200"  songName = "Song Name"  albumName = "Album Name" singer = "Singer" />
+						<MusicCard songBanner = "https://picsum.photos/200"  songName = "Song Name"  albumName = "Album Name" singer = "Singer" />
+						<MusicCard songBanner = "https://picsum.photos/200"  songName = "Song Name"  albumName = "Album Name" singer = "Singer" />
 					</div>
 				</div>
 

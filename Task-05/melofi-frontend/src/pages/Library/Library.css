@@ -1,0 +1,49 @@
+.wrapper-library{
+	margin-left: 220px;
+
+}
+
+
+.top-section-library{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	gap: 100px;
+	position: relative;
+	top: 40px;
+	border: solid 1px;
+
+
+}
+
+.playlist-btn-library{
+	color: white;
+	font-weight: bold;
+	padding: 15px;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	background: #484D5D;
+	border: none;
+	border-radius: 50px;
+	font-size: 18px;
+	font-weight: bold;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.liked-btn-library{
+	color: white;
+	font-weight: bold;
+	padding: 15px;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	background: #818594;
+	border: none;
+	border-radius: 50px;
+	font-size: 18px;
+	font-weight: bold;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+

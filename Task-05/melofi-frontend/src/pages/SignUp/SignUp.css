@@ -9,19 +9,32 @@
 
 }
 
-.signup-btn{
+.signup-btn {
   background: #2D8BBA;
   color: white;
   font-size: 1em;
   width: 220px;
-  padding: 10px;  
+  padding: 10px;
   border-radius: 10px;
   box-sizing: border-box;
-
-
+  border: none;
+  cursor: pointer;               
+  transition: 0.28s ease-in-out; 
 }
 
-.signup-page-input-field{
+.signup-btn:hover {
+  background: #34A5D9;            
+  transform: translateY(-2px);    
+  box-shadow: 0 6px 18px rgba(45, 139, 186, 0.45);
+}
+
+.signup-btn:active {
+  transform: scale(0.97);        
+  box-shadow: none;
+}
+
+
+.signup-page-input-field {
   background: white;
   color: black;
   font-size: 1em;
@@ -29,8 +42,33 @@
   padding: 10px;
   border-radius: 10px;
   box-sizing: border-box;
+  border: none;
+  outline: none;                
+  transition: 0.25s ease-in-out; 
+}
+
+.signup-page-input-field:focus {
+  box-shadow: 0 0 0 3px rgba(45, 139, 186, 0.35); /* highlight glow */
+  transform: scale(1.02);      
+}
+
+.signup-page-input-field:hover {
+  background: ghostwhite;  
+  transform: translateY(-2px);
+  box-shadow: inset 0 4px 12px rgba(0, 0, 0, 0.45), inset 0 -2px 6px rgba(0, 0, 0, 0.25);
 
 
+
+        
+}
+
+.signup-page-input-field::placeholder {
+  color: #777;
+  transition: 0.2s ease;
+}
+
+.signup-page-input-field:focus::placeholder {
+  opacity: 0.35;
 }
 
 .signup-page-logo{
@@ -45,6 +83,22 @@
 
 .signup-container p{
   color: white;
+
+}
+
+
+.sign-in-link{
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sign-in-link:hover {
+  color: white;
+  background: #2D8BBA;
+  border-radius: 5px;
+  padding: 6px;
+  box-shadow: 0 6px 18px rgba(45, 139, 186, 0.45);
+  font-size: 12px;
 
 }
 

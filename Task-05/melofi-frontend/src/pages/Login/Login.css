@@ -12,11 +12,25 @@
   color: white;
   font-size: 1em;
   width: 220px;
-  padding: 10px;  
+  padding: 10px;
   border-radius: 10px;
   box-sizing: border-box;
+  border: none;
+  cursor: pointer;               
+  transition: 0.28s ease-in-out;
 
 
+}
+
+.login-btn:hover {
+  background: #34A5D9;            
+  transform: translateY(-2px);    
+  box-shadow: 0 6px 18px rgba(45, 139, 186, 0.45);
+}
+
+.login-btn:active {
+  transform: scale(0.97);        
+  box-shadow: none;
 }
 
 .login-page-input-field{
@@ -27,8 +41,32 @@
   padding: 10px;
   border-radius: 10px;
   box-sizing: border-box;
+  border: none;
+  outline: none;                
+  transition: 0.25s ease-in-out; 
 
 
+}
+
+.login-page-input-field:focus {
+  box-shadow: 0 0 0 3px rgba(45, 139, 186, 0.35); /* highlight glow */
+  transform: scale(1.02);      
+}
+
+.login-page-input-field:hover {
+  background: ghostwhite;  
+  transform: translateY(-2px);
+  box-shadow: inset 0 4px 12px rgba(0, 0, 0, 0.45), inset 0 -2px 6px rgba(0, 0, 0, 0.25);
+        
+}
+
+.login-page-input-field::placeholder {
+  color: #777;
+  transition: 0.2s ease;
+}
+
+.login-page-input-field:focus::placeholder {
+  opacity: 0.35;
 }
 
 .login-page-logo{
@@ -45,6 +83,30 @@
   color: white;
 
 }
+
+.forgot-password {
+  position: relative;
+  left: 55px;
+  font-size: 10px;
+  bottom: 2px;
+  cursor: pointer;
+  transition: 0.28s;
+}
+
+.forgot-password:hover {
+  border-radius: 5px;
+  border: none;
+  background: none;
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.45);
+  
+  backdrop-filter: blur(8px);
+
+  font-size: 10px;
+
+}
+
+
+
 
 
 
