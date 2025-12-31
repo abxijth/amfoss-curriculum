@@ -3,19 +3,57 @@ import MusicCard from '../../components/MusicCard.jsx'
 import PlaylistCard from '../../components/PlaylistCard.jsx'
 import Button from '../../components/Button.jsx'
 import './Library.css'
+import { useState } from "react";
+import mockPlaylists from "../../data/mockPlaylists";
+import mockLikedSongs from "../../data/mockLikedSongs";
+
+
 
 
 
 const Library = () => {
+	const [activeTab, setActiveTab] = useState("playlist");
 
 	return (
 		<>
 			<div className="wrapper-library">
 				<Sidebar/>
 				<div className="top-section-library">
-					<Button text="Playlist" type="submit" className="playlist-btn-library"/>
-					<Button text="Liked" type="submit" className="liked-btn-library"/>
+					<Button text="Playlist" type="button" className={`playlist-btn-library ${activeTab === "playlist" ? "active-btn" : ""}`} onClick={() => setActiveTab("playlist")}/>
+					<Button text="Liked" type="button" className={`liked-btn-library ${activeTab === "liked" ? "active-btn" : ""}`} onClick={() => setActiveTab("liked")}/>				
 				</div>
+
+				<div className="library-content">
+				  {activeTab === "playlist" && (
+				    <div className="cards-grid">
+				    	{mockPlaylists.map((playlist) => (
+					      <PlaylistCard
+					        key={playlist.id}
+					        playlistBanner={playlist.playlistBanner}
+					        playlistName={playlist.playlistName}
+					        playlistCreator={playlist.playlistCreator}
+					      />
+					    ))}
+				    </div>
+				  )}
+
+				  {activeTab === "liked" && (
+				    <div className="cards-grid">
+				    	{mockLikedSongs.map((song) => (
+					      <MusicCard
+					        key={song.id}
+					        songBanner={song.songBanner}
+					        songName={song.songName}
+					        albumName={song.albumName}
+					        singer={song.singer}
+					      />
+					    ))}
+				    </div>
+				  )}
+				</div>
+
+
+
 			</div>
 		</>
 

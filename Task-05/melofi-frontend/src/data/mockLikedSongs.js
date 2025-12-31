@@ -1,0 +1,88 @@
+const mockLikedSongs = [
+  {
+    id: 1,
+    songBanner: "https://picsum.photos/seed/song1/200",
+    songName: "Night Drive",
+    albumName: "Midnight",
+    singer: "Lo-Fi Kid",
+  },
+  {
+    id: 2,
+    songBanner: "https://picsum.photos/seed/song2/200",
+    songName: "Rain Window",
+    albumName: "City Lights",
+    singer: "Sleepy Owl",
+  },
+  {
+    id: 3,
+    songBanner: "https://picsum.photos/seed/song3/200",
+    songName: "Late Calls",
+    albumName: "After Dark",
+    singer: "Neon Dreams",
+  },
+  {
+    id: 4,
+    songBanner: "https://picsum.photos/seed/song4/200",
+    songName: "Static Dreams",
+    albumName: "Night Waves",
+    singer: "Echo Room",
+  },
+  {
+    id: 1,
+    songBanner: "https://picsum.photos/seed/song1/200",
+    songName: "Night Drive",
+    albumName: "Midnight",
+    singer: "Lo-Fi Kid",
+  },
+  {
+    id: 2,
+    songBanner: "https://picsum.photos/seed/song2/200",
+    songName: "Rain Window",
+    albumName: "City Lights",
+    singer: "Sleepy Owl",
+  },
+  {
+    id: 3,
+    songBanner: "https://picsum.photos/seed/song3/200",
+    songName: "Late Calls",
+    albumName: "After Dark",
+    singer: "Neon Dreams",
+  },
+  {
+    id: 4,
+    songBanner: "https://picsum.photos/seed/song4/200",
+    songName: "Static Dreams",
+    albumName: "Night Waves",
+    singer: "Echo Room",
+  },
+  {
+    id: 1,
+    songBanner: "https://picsum.photos/seed/song1/200",
+    songName: "Night Drive",
+    albumName: "Midnight",
+    singer: "Lo-Fi Kid",
+  },
+  {
+    id: 2,
+    songBanner: "https://picsum.photos/seed/song2/200",
+    songName: "Rain Window",
+    albumName: "City Lights",
+    singer: "Sleepy Owl",
+  },
+  {
+    id: 3,
+    songBanner: "https://picsum.photos/seed/song3/200",
+    songName: "Late Calls",
+    albumName: "After Dark",
+    singer: "Neon Dreams",
+  },
+  {
+    id: 4,
+    songBanner: "https://picsum.photos/seed/song4/200",
+    songName: "Static Dreams",
+    albumName: "Night Waves",
+    singer: "Echo Room",
+  },
+];
+
+export default mockLikedSongs;
