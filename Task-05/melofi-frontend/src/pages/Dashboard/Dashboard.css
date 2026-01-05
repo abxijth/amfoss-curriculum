@@ -1,12 +1,23 @@
 .music-cards-div {
-	display: flex;
-	padding: 30px;
-  	display: flex;
-  	flex-flow: row wrap;  	
+	display: grid;
+	grid-template-rows: 100px 100px 100px;
+	grid-template-columns: 1fr 1fr 1fr;
+  	justify-items: center;
   	align-items: center;
-  	justify-content: center;
-  	position: relative;
-  	top: -28px;
+  	grid-auto-rows: auto;
+  	gap: 0px;
+
+}
+
+.playlist-cards-div {
+	position: relative;
+	top: 50px;
+	display: grid;
+	grid-template-rows: 100px 100px 100px;
+	grid-template-columns: 1fr 1fr 1fr;
+  	justify-items: center;
+  	align-items: center;
+  	gap: 100px;
 
 }
 

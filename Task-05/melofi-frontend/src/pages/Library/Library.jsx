@@ -6,6 +6,8 @@ import './Library.css'
 import { useState } from "react";
 import mockPlaylists from "../../data/mockPlaylists";
 import mockLikedSongs from "../../data/mockLikedSongs";
+import { Link } from "react-router-dom";
+
 
 
 
@@ -27,12 +29,11 @@ const Library = () => {
 				  {activeTab === "playlist" && (
 				    <div className="cards-grid">
 				    	{mockPlaylists.map((playlist) => (
-					      <PlaylistCard
-					        key={playlist.id}
+					      <Link to={`/musicplayer/playlist/${playlist.id}`} key={playlist.id}><PlaylistCard
 					        playlistBanner={playlist.playlistBanner}
 					        playlistName={playlist.playlistName}
 					        playlistCreator={playlist.playlistCreator}
-					      />
+					      /></Link>
 					    ))}
 				    </div>
 				  )}
@@ -40,13 +41,12 @@ const Library = () => {
 				  {activeTab === "liked" && (
 				    <div className="cards-grid">
 				    	{mockLikedSongs.map((song) => (
-					      <MusicCard
-					        key={song.id}
+					      <Link to={`/musicplayer/song/${song.id}`} key={song.id}><MusicCard
 					        songBanner={song.songBanner}
 					        songName={song.songName}
 					        albumName={song.albumName}
 					        singer={song.singer}
-					      />
+					      /></Link>
 					    ))}
 				    </div>
 				  )}

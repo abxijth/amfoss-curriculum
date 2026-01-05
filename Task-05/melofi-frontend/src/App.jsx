@@ -3,6 +3,8 @@ import SignUp from './pages/SignUp/SignUp.jsx';
 import Dashboard from './pages/Dashboard/Dashboard.jsx';
 import Library from './pages/Library/Library.jsx';
 import Search from './pages/Search/Search.jsx';
+import MusicPlayer from './pages/MusicPlayer/MusicPlayer.jsx';
+
 
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
@@ -20,6 +22,8 @@ function App() {
 			<Route path="/dashboard" element = {<Dashboard/>}/>
 			<Route path="/library" element = {<Library/>}/>
 			<Route path="/search" element = {<Search/>}/>
+			<Route path="/musicplayer/:type/:id" element={<MusicPlayer />} />
+
 
 			
 

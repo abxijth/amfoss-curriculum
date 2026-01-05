@@ -5,7 +5,7 @@ import './Dashboard.css'
 import Button from '../../components/Button.jsx'
 import mockSongs from '../../data/mockSongs';
 import mockPlaylists from '../../data/mockPlaylists';
-
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
 
@@ -20,7 +20,7 @@ const Dashboard = () => {
 					</div>
 					<div className="music-cards-div">
 						{
-							mockSongs.map((song) => (<MusicCard key={song.id} songBanner={song.songBanner} songName={song.songName} albumName={song.albumName} singer={song.singer}/>))
+							mockSongs.map((song) => (<Link to={`/musicplayer/song/${song.id}`} key={song.id}><MusicCard songBanner={song.songBanner} songName={song.songName} albumName={song.albumName} singer={song.singer}/></Link>))
 						}
 					</div>
 				</div>
@@ -30,9 +30,9 @@ const Dashboard = () => {
 					<div className="songs-title-btn-div">
 						<Button text="Playlist" type="submit" className="songs-title-btn"/>
 					</div>
-					<div className="music-cards-div">
+					<div className="playlist-cards-div">
 						{
-							mockPlaylists.map((playlist) => (<PlaylistCard key={playlist.id} playlistBanner={playlist.playlistBanner} playlistName={playlist.playlistName} playlistCreator={playlist.playlistCreator}/>))
+							mockPlaylists.map((playlist) => (<Link to={`/musicplayer/playlist/${playlist.id}`} key={playlist.id}><PlaylistCard playlistBanner={playlist.playlistBanner} playlistName={playlist.playlistName} playlistCreator={playlist.playlistCreator}/></Link>))
 						}
 					</div>
 				</div>
