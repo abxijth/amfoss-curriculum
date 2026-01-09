@@ -27,7 +27,7 @@ const Library = () => {
 
 				<div className="library-content">
 				  {activeTab === "playlist" && (
-				    <div className="cards-grid">
+				    <div className="library-playlist-grid">
 				    	{mockPlaylists.map((playlist) => (
 					      <Link to={`/musicplayer/playlist/${playlist.id}`} key={playlist.id}><PlaylistCard
 					        playlistBanner={playlist.playlistBanner}
@@ -39,7 +39,7 @@ const Library = () => {
 				  )}
 
 				  {activeTab === "liked" && (
-				    <div className="cards-grid">
+				    <div className="library-liked-grid">
 				    	{mockLikedSongs.map((song) => (
 					      <Link to={`/musicplayer/song/${song.id}`} key={song.id}><MusicCard
 					        songBanner={song.songBanner}

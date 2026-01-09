@@ -1,9 +1,6 @@
 .wrapper-library{
 	margin-left: 220px;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: center;
+	
 
 
 }
@@ -61,10 +58,31 @@
 
 
 .library-content {
-	width: 80vw;
 	position: relative;
 	top: 80px;
+	
 
+}
+
+.library-playlist-grid{
+	position: relative;
+	top: 10px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-auto-rows: 200px; 
+	justify-items: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.library-liked-grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-auto-rows: 100px; 
+	justify-items: center;
+	align-items: center;
+	
+	
 }
 
 
