@@ -106,7 +106,12 @@
 }
 
 
+.login-form{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 12px;
 
+}
 
 
 
