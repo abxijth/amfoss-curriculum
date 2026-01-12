@@ -2,7 +2,7 @@ import InputField from "../../components/InputField.jsx";
 import Button from "../../components/Button.jsx"
 import Logo from "../../components/Logo.jsx"
 import "./Login.css";
-import { Link, useNavigate} from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 
