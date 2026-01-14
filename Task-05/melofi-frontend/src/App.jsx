@@ -4,7 +4,8 @@ import Dashboard from './pages/Dashboard/Dashboard.jsx';
 import Library from './pages/Library/Library.jsx';
 import Search from './pages/Search/Search.jsx';
 import MusicPlayer from './pages/MusicPlayer/MusicPlayer.jsx';
-
+import ProtectedRoute from './components/ProtectedRoute.jsx';
+ 
 
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
@@ -19,10 +20,10 @@ function App() {
 			<Route path="/" element = {<Login/>}/>
 			<Route path="/login" element = {<Login/>}/>
 			<Route path="/signup" element = {<SignUp/>}/>
-			<Route path="/dashboard" element = {<Dashboard/>}/>
-			<Route path="/library" element = {<Library/>}/>
-			<Route path="/search" element = {<Search/>}/>
-			<Route path="/musicplayer/:type/:id" element={<MusicPlayer />} />
+			<Route path="/dashboard" element = {<ProtectedRoute> <Dashboard/> </ProtectedRoute>}/>
+			<Route path="/library" element = {<ProtectedRoute> <Library/> </ProtectedRoute>}/>
+			<Route path="/search" element = {<ProtectedRoute> <Search/> </ProtectedRoute>}/>
+			<Route path="/musicplayer/:type/:id" element={<ProtectedRoute> <MusicPlayer/> </ProtectedRoute>} />
 
 
 			

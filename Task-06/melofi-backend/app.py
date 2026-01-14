@@ -2,12 +2,16 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 import mysql.connector
 import bcrypt
+from flask_jwt_extended import (JWTManager, create_access_token, jwt_required, get_jwt_identity)
 
 def my_db():
     return mysql.connector.connect(user='melofi_user', password='melofi', host='localhost', database='melofi')
 
 app = Flask(__name__)
+app.config["JWT_SECRET_KEY"] = "melofi"
+jwt = JWTManager(app)
 CORS(app)
+
 
 @app.route("/api/register", methods=["POST"])
 def register():
@@ -65,9 +69,29 @@ def login():
         return jsonify({"message": "Invalid Credentials"}), 401
 
     if bcrypt.checkpw(bytes_pw, user['password'].encode('utf-8')):
-        return jsonify({"message": "Login Successful"}), 200
+        access_token = create_access_token(identity=str(user['id']))
+        return jsonify({"message": "Login Successful", "token": access_token}), 200
     
     return jsonify({"message": "Login Failed"}), 401
+
+
+@app.route("/api/dashboard", methods=["GET"])
+@jwt_required()
+def dashboard():
+    user_id = get_jwt_identity()
+    return jsonify({"message": "welcome to dashboard", "user_id": user_id}), 200
+
+
+@app.route("/api/library", methods=["GET"])
+@jwt_required()
+def library():
+    user_id = get_jwt_identity()
+    return jsonify({"message": "welcome to library", "user_id": user_id}), 200
+
+
+
+
+
 
     
 
