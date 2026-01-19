@@ -34,6 +34,7 @@ const Login = () => {
       
       } else {
         console.error("Login Failed");
+        alert("Invalid Credentials !")
      } 
 
     } catch (error) {
