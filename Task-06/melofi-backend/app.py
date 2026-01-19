@@ -68,7 +68,7 @@ def login():
     if not user:
         return jsonify({"message": "Invalid Credentials"}), 401
 
-    if bcrypt.checkpw(bytes_pw, user['password'].encode('utf-8')):
+    if bcrypt.checkpw(bytes_pw, user['password']):
         access_token = create_access_token(identity=str(user['id']))
         return jsonify({"message": "Login Successful", "token": access_token}), 200
     

@@ -1,17 +1,17 @@
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import Sidebar from '../../components/Sidebar.jsx'
 import MusicCard from '../../components/MusicCard.jsx'
 import PlaylistCard from '../../components/PlaylistCard.jsx'
 import './Dashboard.css'
 import Button from '../../components/Button.jsx'
 import mockPlaylists from '../../data/mockPlaylists';
+import mockSongs from '../../data/mockSongs';
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
 
   const navigate = useNavigate();
-  const [songs, setSongs] = useState([]);
 
   useEffect(() => {
     const token = localStorage.getItem("token");
@@ -27,26 +27,13 @@ const Dashboard = () => {
     .then(data => {
       console.log(data);
     })
-    .then(() => {
-      fetch("https://free-music-api2.vercel.app/getSongs", {method: "GET", headers: {"Content-Type": "application/json"}})
-      .then(res => res.json())
-      .then(data => {
-        const formattedSongs = data.map(song => ({
-          id: song._id,
-          songBanner: song.songBanner,
-          songName: song.songName,
-          albumName: song.albumname,
-          singer: song.singer
-        }));
-        setSongs(formattedSongs)
-      })
-      .catch(err=>console.error("Error fetching songs: ", err));
-
-    })
     .catch(() => {
       navigate("/login");
     });
   }, [navigate]);
+
+
+  const songs = mockSongs;
   
 
 
