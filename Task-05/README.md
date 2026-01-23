@@ -10,7 +10,7 @@ Frontend for the music streaming web application, MeloFi, using React.
 * Used a free api ```https://github.com/kiranugale2o/free-music-api``` for fetching the songs details.
 
 
-## What all i Couldnt Do 
+## What All I Couldnt Do 
 
 * Playlist ui that lists all songs in a selected playlist
 * Profile page
