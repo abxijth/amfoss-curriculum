@@ -1,15 +1,37 @@
-import { useEffect} from "react";
 import Sidebar from '../../components/Sidebar.jsx'
 import MusicCard from '../../components/MusicCard.jsx'
 import PlaylistCard from '../../components/PlaylistCard.jsx'
 import './Dashboard.css'
 import Button from '../../components/Button.jsx'
 import mockPlaylists from '../../data/mockPlaylists';
-import mockSongs from '../../data/mockSongs';
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+
+const API_BASE_URL = "https://free-music-api2.vercel.app"
+
 
 const Dashboard = () => {
+  const [songs, setSongs] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch(`${API_BASE_URL}/getSongs`)
+      .then(res => res.json())
+      .then(data => {
+        const normalized = data.map(song => ({
+          id: song._id,
+          songName: song.songName,
+          songBanner: song.songBanner,
+          singer: song.singer,
+          albumName: song.albumname,
+          audioUrl: song.url
+        }));
+        setSongs(normalized);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, []);
 
   const navigate = useNavigate();
 
@@ -33,7 +55,6 @@ const Dashboard = () => {
   }, [navigate]);
 
 
-  const songs = mockSongs;
   
 
 

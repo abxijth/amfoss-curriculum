@@ -1,15 +1,34 @@
 import Sidebar from '../../components/Sidebar.jsx'
 import MusicCard from '../../components/MusicCard.jsx'
 import "./Search.css"
-import mockSongs from '../../data/mockSongs'
 import { Link } from "react-router-dom"
-import { useState } from "react"
+import { useEffect, useState } from "react";
+const API_BASE_URL = "https://free-music-api2.vercel.app"
+
 
 const Search = () => {
+  const [songs, setSongs] = useState([]);
+
+  useEffect(() => {
+    fetch(`${API_BASE_URL}/getSongs`)
+      .then(res => res.json())
+      .then(data => {
+        const normalized = data.map(song => ({
+          id: song._id,
+          songName: song.songName,
+          songBanner: song.songBanner,
+          singer: song.singer,
+          albumName: song.albumname,
+          audioUrl: song.url
+        }))
+        setSongs(normalized)
+      })
+  }, [])
+
 
 	const [query, setQuery] = useState("")
 
-	const filteredSongs = mockSongs.filter((song) =>
+	const filteredSongs = songs.filter((song) =>
 		song.songName.toLowerCase().includes(query.toLowerCase()) ||
 		song.albumName.toLowerCase().includes(query.toLowerCase()) ||
 		song.singer.toLowerCase().includes(query.toLowerCase())
