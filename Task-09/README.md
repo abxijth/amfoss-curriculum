@@ -6,7 +6,7 @@ For the final task, I wrote a blog reflecting on my journey through the program.
 
 ## Blog Link
 
-👉 [https://abxijth.github.io/amfoss/posts/task-09/]
+* [My Journey](https://abxijth.github.io/amfoss/posts/task-09/)
 
 ## Summary
 
