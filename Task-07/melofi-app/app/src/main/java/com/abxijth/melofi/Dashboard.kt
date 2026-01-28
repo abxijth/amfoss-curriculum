@@ -51,7 +51,7 @@ fun Dashboard() {
 
     LazyColumn(
         modifier = Modifier.fillMaxSize(),
-        contentPadding = PaddingValues(vertical = 24.dp),
+        contentPadding = PaddingValues(top = 48.dp, bottom = 24.dp),
         verticalArrangement = Arrangement.spacedBy(24.dp),
 
 
