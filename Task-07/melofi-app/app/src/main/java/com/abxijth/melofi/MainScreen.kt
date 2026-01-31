@@ -6,6 +6,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.List
 import androidx.compose.material.icons.filled.Person
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -24,7 +25,7 @@ fun MainScreen(modifier: Modifier = Modifier) {
     val navItemList = listOf(
         NavItem("Home", Icons.Default.Home),
         NavItem("Library", Icons.Default.List),
-        NavItem("Profile", Icons.Default.Person)
+        NavItem("Search", Icons.Default.Search)
     )
 
     var selectedIndex by remember {
@@ -64,7 +65,7 @@ fun ContentScreen(modifier: Modifier = Modifier, selectedIndex : Int) {
     when (selectedIndex) {
         0 -> Dashboard()
         1 -> Library()
-        2 -> Profile()
+        2 -> Search()
     }
     
 }
